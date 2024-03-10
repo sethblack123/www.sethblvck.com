@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       BUCKET: www.sethblvck.com
-      DIST: out
+      DIST: build
       REGION: us-east-1
       DIST_ID: ENG2G0LB7RSHS
 
