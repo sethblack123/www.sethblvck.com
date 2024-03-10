@@ -19,3 +19,15 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: 'us-east-1'
           SOURCE_DIR: 'website' # Comment corrected
+          
+      -name: Copy files to production website with aws CLI
+        run: |
+          aws s3 sync --delete ${{env.SOURCE_DIR}} s3://${{env.AWS_S3_BUCKET}}
+
+      -name: Copy files to production website with aws CLI
+        run: |
+        aws cloudfront create-invalidation \ 
+        --distrubution-id ${{ env.SOURCE_DIR }} \
+        --paths "/*"
+
+
