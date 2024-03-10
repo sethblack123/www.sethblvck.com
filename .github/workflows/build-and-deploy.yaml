@@ -7,7 +7,7 @@ jobs:
     name: Build and Deploy
     runs-on: ubuntu-latest
     env:
-      BUCKET: www.sethblvck.com
+      BUCKET: ${{ secrets.AWS_S3_BUCKET }}
       DIST: build
       REGION: us-east-1
       DIST_ID: ENG2G0LB7RSHS
