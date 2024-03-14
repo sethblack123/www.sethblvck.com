@@ -57,4 +57,4 @@ jobs:
       run: |
         aws s3 sync . s3://www.sethblvck.com
         aws s3api put-object-acl --bucket www.sethblvck.com --acl public-read --recursive
-        aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths '/*'
+        aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths '/*' --key 0234023446456929587
