@@ -9,14 +9,14 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
-    #steps:
+    steps:
     - name: Checkout code
       uses: actions/checkout@v2
 
     - name: Install AWS CLI
       run: |
-       # sudo apt-get update
-        #sudo apt-get install -y awscli
+        sudo apt-get update
+        sudo apt-get install -y awscli
 
     - name: Deploy to CloudFront
       run: |
