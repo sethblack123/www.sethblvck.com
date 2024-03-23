@@ -2089,11 +2089,11 @@ input, select, textarea {
 		}
 
 		.icon.style2 {
-			color: #00f0ff;
+			color: #00ffcc;
 		}
 
 		.icon.style3 {
-			color: #76ddff;
+			color: #00ffcc;
 		}
 
 /* Image */
@@ -2987,7 +2987,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #FC7B43;
+			background-color: #b8c5cd;
 			color: #d3d4e4;
 		}
 
@@ -3057,7 +3057,7 @@ input, select, textarea {
 			.wrapper.style3 input[type="checkbox"]:checked + label:before,
 			.wrapper.style3 input[type="radio"]:checked + label:before {
 				background: #ffffff;
-				color: #FC7B43;
+				color: #b8c5cd;
 			}
 
 			.wrapper.style3 ::-webkit-input-placeholder {
