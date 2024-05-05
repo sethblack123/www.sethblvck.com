@@ -2824,7 +2824,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color:  #B1CBE4;
+			background-color:  #aec9de;
 			color: #c8ece9;
 		}
 
@@ -2987,7 +2987,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #FC7B43;
+			background-image: linear-gradient(#b1cbe4, #b6c9d0);
 			color: #ffffff;
 		}
 
